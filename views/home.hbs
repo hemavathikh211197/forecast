@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .home {
+            background-image: url('/images/clouds.png');
+            height: 70vh;
+        }
+    </style>
+</head>
+<body>
+    {{>navbar}}
+    <section class="home">
+        <div class="currentTemp">
+            <h1>30<sup>o</sup></h1>
+            <h3>30<sup>o</sup> / 20<sup>o</sup></h3>
+        </div>
+        <div class="location">
+            <div class="currentLocation" style="margin-left:400px;">
+                <img src="/images/loc.png" alt="">
+                <p>Bangalore</p>
+            </div>
+            <img id="nature" src="/images/banne-img-right.jpg" alt="">
+        </div>
+    </section>
+    <section class="get_app">
+        <div class="banner1">
+            <h1>Weather Assistant <br>In Your Phone</h1>
+            <h6>Find Out Rain and floods beckon as La Nina <br> looms and IOD deepens.</h6>
+            <a href="/weather">
+                <input type="Weather App" id="button" placeholder="Weather App">
+            </a>
+        </div>
+        <div class="banner2">
+            <img id="ban1" src="/images/banner2.png" alt="">
+            <img src="/images/banner.png" alt="">
+        </div>
+    </section>
+    {{>footer}}
+</body>
+</html>

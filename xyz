@@ -1,0 +1,285 @@
+<section class="home">
+        <div class="temp">
+            <h1>30<sup>o</sup></h1>
+            <h3>30<sup>o</sup> / 20<sup>o</sup></h3>
+        </div>
+        <div class="location">
+            <div class="currentLocation" style="margin-left:800px;">
+                <img width="30" src="/images/gps.png" alt="">
+                <p>Bangalore</p>
+            </div>
+            <div class="home1">
+            <img height="800" width="800" src="/images/home1.png" alt="">
+        </div>
+        </div>
+    </section>
+
+
+
+    .home1{
+        margin-left: 1000px;
+    }
+    .temp{
+        padding: 400px 400px;
+    }
+    .temp h1{
+        font-size: 120px;
+        color: white; 
+    }
+    .temp h3{
+        font-size: 40px;
+        color: white;
+    }
+    .location span{
+        font-weight: bold;
+        font-size: 30px;
+        font-family: cursive;
+        color: rgb(10,10,32);
+    }
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .home{
+            background-image: url('/images/home.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+       <section class="home">
+        <div class="currentTemp">
+            <h1>30<sup>o</sup></h1>
+            <h3>30<sup>o</sup> / 20<sup>o</sup></h3>
+        </div>
+        <div class="location">
+            <div class="currentLocation" style="margin-left:400px;">
+                <img src="/images/loc.png" alt="">
+                <p>Bangalore</p>
+            </div>
+            <img src="/images/banne-img-right.jpg" alt="">
+        </div>
+    </section>
+      <section class="get_app">
+        <div class="banner1">
+            <h1>Weather Assistant <br>In Your Phone</h1>
+            <h6>Find Out Rain and floods beckon as La Nina <br> looms and IOD deepens.</h6>
+            <a href="/weather">
+                <input type="Weather App" id="button" placeholder="Weather App">
+            </a>
+        </div>
+        <div class="banner2">
+            <img id="ban1" src="/images/banner2.png" alt="">
+            <img src="/images/banner.png" alt="">
+        </div>
+    </section>
+    {{>footer}}
+</body>
+
+</html>
+
+
+
+
+
+csssssss
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.nav_links li{
+   display: inline;
+   padding:0px 20px;
+   font-size: 20px;
+}
+.nav_links a{
+    text-decoration: none;
+    border-radius: 2px;
+    color: black;
+    
+}
+.nav_links a:hover{
+    padding: 5px;
+    background-color:skyblue;
+    border-radius: 5px;
+    color: white;
+}
+.logo img{
+    width: 250px;
+    height: 100px;
+}
+.home{
+    display: flex;
+}
+.currentTemp {
+    padding: 200px 400px;
+}
+.currentTemp h1 {
+    font-size: 150px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.currentTemp h3 {
+    font-size: 90px;
+    padding-top: 0px;
+}
+.currentLocation img {
+    align-items: center;
+    padding: 200px;
+    height: 1vh;
+    padding-top: 0px;
+}
+.currentLocation p {
+    font-size: 50px;
+    font-weight: bold;
+}
+.location {
+    padding-left: 500px;
+}
+.location span {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: cursive;
+    color: grb(10, 10, 32);
+}
+
+.location p{
+    color: white;
+}
+.currentLocation{
+    margin-top: 250px;
+    margin-left: 700px;
+}
+
+.footer{
+    background-color: rgb(25, 25, 86);
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+.home1{
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+.weather{
+    background-image: url('/images/backimg.webp');
+    background-size: cover;
+    height: 100vh;
+}
+.searchInput{
+display: flex;
+justify-content: center;
+padding: 30px 0px;
+}
+#search{
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 600px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 10px;
+}
+#search:focus{
+    outline: none;
+}
+#btn{
+border:none;
+padding: 8px 30px;
+font-size: 20px;
+background-color: lavender;
+border-bottom-left-radius:10px ;
+border: bottom right radius 10px; 
+
+}
+.weatherInfo{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.card{
+    background-color: rgb(0,0,0,0.4);
+    height: 270px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+
+
+}
+.card h3{
+    text-align: center;
+}
+
+.get_app {
+    background-image: linear-gradient(to left top, #E7E7E7, #E0E4F1, #D0E4FB, #B6E6FF, #97E9FF);
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 80px;
+    min-height: 500px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-evenly;
+}
+.banner1 {
+    padding-left: 100px;
+    margin-top: 40px;
+}
+.banner1 h1 {
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner1 h6 {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button {
+    width: 15vh;
+    background: #00AEF5;
+    color: #fff;
+    padding: 20px 10px;
+    margin-top: 20px;
+    border-color: #00AEF5;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: none;
+}
+#button:hover {
+    background-color: lightgreen;
+    border-color: lightgreen;
+    color: black;
+}
+#ban1 {
+    vertical-align: top;
+    padding-top: 200px;
+    padding-right: 50px;
+    height: 30vh;
+}
